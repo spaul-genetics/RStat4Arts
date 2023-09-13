@@ -32,7 +32,42 @@
     "href": "slides/01IntroToR.html#vector",
     "title": "Introduction to R",
     "section": "Vector",
-    "text": "Vector\n\nx &lt;- c(1, 4, 10, 11)\nx\n\n[1]  1  4 10 11\n\n\n\nElement wise multiplication\n\n\nx * 2\n\n[1]  2  8 20 22\n\n\n\nElement wise Addition\n\n\nx + 3\n\n[1]  4  7 13 14\n\n\n\nElement wise subtraction\n\n\nx - 3\n\n[1] -2  1  7  8\n\n\n\nEquation\n\n\ny = 3*x + 5\nprint(y)\n\n[1]  8 17 35 38"
+    "text": "Vector\n\nx &lt;- c(1, 4, 10, 11)\nx\n\n[1]  1  4 10 11\n\n\n\nElement wise operation\n\n\nx * 2\n\n[1]  2  8 20 22\n\nx + 3\n\n[1]  4  7 13 14\n\nx - 3\n\n[1] -2  1  7  8\n\ny = 3*x + 5\nprint(y)\n\n[1]  8 17 35 38"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#class",
+    "href": "slides/01IntroToR.html#class",
+    "title": "Introduction to R",
+    "section": "Class",
+    "text": "Class\n\nclass(1)\n\n[1] \"numeric\"\n\nclass('a')\n\n[1] \"character\"\n\nclass(TRUE)\n\n[1] \"logical\""
+  },
+  {
+    "objectID": "slides/01IntroToR.html#special-class-1",
+    "href": "slides/01IntroToR.html#special-class-1",
+    "title": "Introduction to R",
+    "section": "Special Class 1",
+    "text": "Special Class 1\n\nx = 4\nclass(x)\n\n[1] \"numeric\"\n\nx = as.integer(x)\nclass(x)\n\n[1] \"integer\""
+  },
+  {
+    "objectID": "slides/01IntroToR.html#special-class-2",
+    "href": "slides/01IntroToR.html#special-class-2",
+    "title": "Introduction to R",
+    "section": "Special Class 2",
+    "text": "Special Class 2\n\ngender = sample(c('Male', 'Female'), size = 20, replace = T)\nclass(gender)\n\n[1] \"character\"\n\ngender = as.factor(gender)\n# Use ?as.factor to get details \nclass(gender)\n\n[1] \"factor\""
+  },
+  {
+    "objectID": "slides/01IntroToR.html#slicing",
+    "href": "slides/01IntroToR.html#slicing",
+    "title": "Introduction to R",
+    "section": "Slicing",
+    "text": "Slicing\n\nLETTERS\n\n [1] \"A\" \"B\" \"C\" \"D\" \"E\" \"F\" \"G\" \"H\" \"I\" \"J\" \"K\" \"L\" \"M\" \"N\" \"O\" \"P\" \"Q\" \"R\" \"S\"\n[20] \"T\" \"U\" \"V\" \"W\" \"X\" \"Y\" \"Z\"\n\nLETTERS[2:5]\n\n[1] \"B\" \"C\" \"D\" \"E\"\n\nLETTERS[c(1,5,10)]\n\n[1] \"A\" \"E\" \"J\"\n\nLETTERS[c(1,4,6:9)]\n\n[1] \"A\" \"D\" \"F\" \"G\" \"H\" \"I\""
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "Datasets\nSlides"
   },
   {
     "objectID": "index.html",
@@ -42,11 +77,11 @@
     "text": "In this course I will introduce you to R, the wonderful and powerful programming language for statistical analysis, general data analysis, machine learning and many more. We will learn enough statistical background to run simple data analysis, visualization, hypothesis testing, linear models such as multiple linear regression, and logistic regression, etc."
   },
   {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Course Materials",
+    "objectID": "schedule_bu.html",
+    "href": "schedule_bu.html",
+    "title": "Schedule",
     "section": "",
-    "text": "Datasets\nSlides"
+    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
   },
   {
     "objectID": "schedule.html",
@@ -61,12 +96,5 @@
     "title": "Schedule",
     "section": "",
     "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nIntroduction to R\n\n\nImportant basics of R\n\n\nVery Basic\n\n\n\n\n\n\nNo matching items\n\n\n\n\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment."
-  },
-  {
-    "objectID": "schedule_bu.html",
-    "href": "schedule_bu.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
   }
 ]
