@@ -1,10 +1,45 @@
 [
   {
+    "objectID": "slides/01IntroToR.html#r",
+    "href": "slides/01IntroToR.html#r",
+    "title": "Introduction to R",
+    "section": "R",
+    "text": "R\n\n\nProgramming Langulage\nOther langulages: html, java, python\nPurpose: Data and statistical analysis\nWhat can be done: almost anything\nLimitation: Memory usage"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#getting-started",
+    "href": "slides/01IntroToR.html#getting-started",
+    "title": "Introduction to R",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nInstall R from : https://www.r-project.org\nInstall Rstudio from : https://posit.co/download/rstudio-desktop/\nAlso install Quarto: https://quarto.org/docs/get-started/"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#learned",
+    "href": "slides/01IntroToR.html#learned",
+    "title": "Introduction to R",
+    "section": "Learned",
+    "text": "Learned\n\n\nHow to launch Rstudio\nComponents of Rstudio\nWhere to write code and where to execute it\nFile navigation"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#assignment",
+    "href": "slides/01IntroToR.html#assignment",
+    "title": "Introduction to R",
+    "section": "Assignment",
+    "text": "Assignment\n\nUse either &lt;- or =\n\n\nx &lt;- 3\nprint(x)\n\n[1] 3\n\n\n\ny = 5\ny\n\n[1] 5"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#vector",
+    "href": "slides/01IntroToR.html#vector",
+    "title": "Introduction to R",
+    "section": "Vector",
+    "text": "Vector\n\nx &lt;- c(1, 4, 10, 11)\nx\n\n[1]  1  4 10 11\n\n\n\nElement wise multiplication\n\n\nx * 2\n\n[1]  2  8 20 22\n\n\n\nElement wise Addition\n\n\nx + 3\n\n[1]  4  7 13 14\n\n\n\nElement wise subtraction\n\n\nx - 3\n\n[1] -2  1  7  8\n\n\n\nEquation\n\n\ny = 3*x + 5\nprint(y)\n\n[1]  8 17 35 38"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Course Title",
+    "title": "Basic Statistics in R for Arts",
     "section": "",
-    "text": "Course info & details here"
+    "text": "In this course I will introduce you to R, the wonderful and powerful programming language for statistical analysis, general data analysis, machine learning and many more. We will learn enough statistical background to run simple data analysis, visualization, hypothesis testing, linear models such as multiple linear regression, and logistic regression, etc."
   },
   {
     "objectID": "materials.html",
@@ -16,6 +51,20 @@
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nIntroduction to R\n\n\nImportant basics of R\n\n\nVery Basic\n\n\n\n\n\n\nNo matching items\n\n\n\n\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment."
+  },
+  {
+    "objectID": "schedule.html#weekly-schedule",
+    "href": "schedule.html#weekly-schedule",
+    "title": "Schedule",
+    "section": "",
+    "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nIntroduction to R\n\n\nImportant basics of R\n\n\nVery Basic\n\n\n\n\n\n\nNo matching items\n\n\n\n\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment."
+  },
+  {
+    "objectID": "schedule_bu.html",
+    "href": "schedule_bu.html",
     "title": "Schedule",
     "section": "",
     "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
