@@ -63,6 +63,118 @@
     "text": "Slicing\n\nLETTERS\n\n [1] \"A\" \"B\" \"C\" \"D\" \"E\" \"F\" \"G\" \"H\" \"I\" \"J\" \"K\" \"L\" \"M\" \"N\" \"O\" \"P\" \"Q\" \"R\" \"S\"\n[20] \"T\" \"U\" \"V\" \"W\" \"X\" \"Y\" \"Z\"\n\nLETTERS[2:5]\n\n[1] \"B\" \"C\" \"D\" \"E\"\n\nLETTERS[c(1,5,10)]\n\n[1] \"A\" \"E\" \"J\"\n\nLETTERS[c(1,4,6:9)]\n\n[1] \"A\" \"D\" \"F\" \"G\" \"H\" \"I\""
   },
   {
+    "objectID": "slides/01IntroToR.html#subset",
+    "href": "slides/01IntroToR.html#subset",
+    "title": "Introduction to R",
+    "section": "Subset",
+    "text": "Subset\n\nZila = sample(c('Munshiganj', 'Dhaka','Gazipur'), size = 10, replace = T)\nZila\n\n [1] \"Munshiganj\" \"Dhaka\"      \"Gazipur\"    \"Dhaka\"      \"Dhaka\"     \n [6] \"Munshiganj\" \"Gazipur\"    \"Gazipur\"    \"Munshiganj\" \"Munshiganj\"\n\nIncome = sample(40000:100000, size = 10, replace = T)\nIncome\n\n [1] 69998 72246 83364 90239 55265 59566 82285 77736 85912 66609\n\nZila == 'Munshiganj'\n\n [1]  TRUE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE  TRUE  TRUE\n\nIncome[Zila == 'Munshiganj']\n\n[1] 69998 59566 85912 66609"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#getting-help",
+    "href": "slides/01IntroToR.html#getting-help",
+    "title": "Introduction to R",
+    "section": "Getting Help",
+    "text": "Getting Help\n\n?command\n\n?sum\n?for\n\n??something"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#using-function",
+    "href": "slides/01IntroToR.html#using-function",
+    "title": "Introduction to R",
+    "section": "Using Function",
+    "text": "Using Function\n\npnorm(0.5)\n\n[1] 0.6914625\n\npnorm(0.5, 0, 1)\n\n[1] 0.6914625\n\npnorm(0.5, mean = 0, sd = 1)\n\n[1] 0.6914625\n\npnorm(0.5, 1, 0)\n\n[1] 0"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#reading",
+    "href": "slides/01IntroToR.html#reading",
+    "title": "Introduction to R",
+    "section": "Reading",
+    "text": "Reading\n\nmydata = read.csv('~/Documents/All_R_projects/RStat4Arts/data/toy.example1.csv')\nhead(mydata)\n\n   Person       Zila Income Gender\n1 Person1 Munshiganj  20357   Male\n2 Person2    Gazipur  16669 Female\n3 Person3 Munshiganj  11668   Male\n4 Person4 Munshiganj  26565   Male\n5 Person5 Munshiganj  23465 Female\n6 Person6    Gazipur  35057 Female"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#excel-file",
+    "href": "slides/01IntroToR.html#excel-file",
+    "title": "Introduction to R",
+    "section": "Excel File",
+    "text": "Excel File\n\ninstall.packages('readxl')\n\n\nlibrary(readxl)\nsome_other_data = read_excel('../data/toy.example1.xlsx')\nhead(some_other_data)\n\n# A tibble: 6 × 4\n  Person  Zila       Income Gender\n  &lt;chr&gt;   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt; \n1 Person1 Munshiganj  20357 Male  \n2 Person2 Gazipur     16669 Female\n3 Person3 Munshiganj  11668 Male  \n4 Person4 Munshiganj  26565 Male  \n5 Person5 Munshiganj  23465 Female\n6 Person6 Gazipur     35057 Female"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#without-loading-package",
+    "href": "slides/01IntroToR.html#without-loading-package",
+    "title": "Introduction to R",
+    "section": "Without Loading Package",
+    "text": "Without Loading Package\n\nsome.new.data &lt;- readxl::read_excel('../data/toy.example1.xlsx')"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#access-variable",
+    "href": "slides/01IntroToR.html#access-variable",
+    "title": "Introduction to R",
+    "section": "Access variable",
+    "text": "Access variable\n\nmydata$Zila\n\n  [1] \"Munshiganj\" \"Gazipur\"    \"Munshiganj\" \"Munshiganj\" \"Munshiganj\"\n  [6] \"Gazipur\"    \"Munshiganj\" \"Munshiganj\" \"Gazipur\"    \"Munshiganj\"\n [11] \"Gazipur\"    \"Gazipur\"    \"Gazipur\"    \"Dhaka\"      \"Gazipur\"   \n [16] \"Gazipur\"    \"Gazipur\"    \"Dhaka\"      \"Munshiganj\" \"Dhaka\"     \n [21] \"Dhaka\"      \"Munshiganj\" \"Munshiganj\" \"Dhaka\"      \"Gazipur\"   \n [26] \"Gazipur\"    \"Gazipur\"    \"Gazipur\"    \"Gazipur\"    \"Munshiganj\"\n [31] \"Munshiganj\" \"Gazipur\"    \"Gazipur\"    \"Munshiganj\" \"Gazipur\"   \n [36] \"Dhaka\"      \"Dhaka\"      \"Dhaka\"      \"Dhaka\"      \"Dhaka\"     \n [41] \"Munshiganj\" \"Munshiganj\" \"Munshiganj\" \"Munshiganj\" \"Dhaka\"     \n [46] \"Munshiganj\" \"Dhaka\"      \"Gazipur\"    \"Munshiganj\" \"Dhaka\"     \n [51] \"Gazipur\"    \"Gazipur\"    \"Dhaka\"      \"Dhaka\"      \"Dhaka\"     \n [56] \"Dhaka\"      \"Dhaka\"      \"Munshiganj\" \"Gazipur\"    \"Munshiganj\"\n [61] \"Dhaka\"      \"Munshiganj\" \"Munshiganj\" \"Dhaka\"      \"Gazipur\"   \n [66] \"Dhaka\"      \"Dhaka\"      \"Gazipur\"    \"Dhaka\"      \"Munshiganj\"\n [71] \"Dhaka\"      \"Munshiganj\" \"Dhaka\"      \"Munshiganj\" \"Dhaka\"     \n [76] \"Dhaka\"      \"Dhaka\"      \"Gazipur\"    \"Dhaka\"      \"Dhaka\"     \n [81] \"Gazipur\"    \"Gazipur\"    \"Dhaka\"      \"Munshiganj\" \"Gazipur\"   \n [86] \"Munshiganj\" \"Munshiganj\" \"Dhaka\"      \"Dhaka\"      \"Munshiganj\"\n [91] \"Gazipur\"    \"Dhaka\"      \"Munshiganj\" \"Dhaka\"      \"Dhaka\"     \n [96] \"Dhaka\"      \"Gazipur\"    \"Munshiganj\" \"Gazipur\"    \"Munshiganj\""
+  },
+  {
+    "objectID": "slides/01IntroToR.html#subset-data-1",
+    "href": "slides/01IntroToR.html#subset-data-1",
+    "title": "Introduction to R",
+    "section": "Subset Data 1",
+    "text": "Subset Data 1\n\nmydata[1:5,1:3]\n\n   Person       Zila Income\n1 Person1 Munshiganj  20357\n2 Person2    Gazipur  16669\n3 Person3 Munshiganj  11668\n4 Person4 Munshiganj  26565\n5 Person5 Munshiganj  23465"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#subset-data-2",
+    "href": "slides/01IntroToR.html#subset-data-2",
+    "title": "Introduction to R",
+    "section": "Subset Data 2",
+    "text": "Subset Data 2\n\nmydata[1:5,]\n\n   Person       Zila Income Gender\n1 Person1 Munshiganj  20357   Male\n2 Person2    Gazipur  16669 Female\n3 Person3 Munshiganj  11668   Male\n4 Person4 Munshiganj  26565   Male\n5 Person5 Munshiganj  23465 Female"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#subset-data-3",
+    "href": "slides/01IntroToR.html#subset-data-3",
+    "title": "Introduction to R",
+    "section": "Subset Data 3",
+    "text": "Subset Data 3\n\nmydata[c(1,3,6,7),c('Person', 'Zila')]\n\n   Person       Zila\n1 Person1 Munshiganj\n3 Person3 Munshiganj\n6 Person6    Gazipur\n7 Person7 Munshiganj"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#subset-data-4",
+    "href": "slides/01IntroToR.html#subset-data-4",
+    "title": "Introduction to R",
+    "section": "Subset Data 4",
+    "text": "Subset Data 4\n\nmydata[mydata$Zila=='Munshiganj',]\n\n       Person       Zila Income Gender\n1     Person1 Munshiganj  20357   Male\n3     Person3 Munshiganj  11668   Male\n4     Person4 Munshiganj  26565   Male\n5     Person5 Munshiganj  23465 Female\n7     Person7 Munshiganj  36276   Male\n8     Person8 Munshiganj  29784 Female\n10   Person10 Munshiganj  13676   Male\n19   Person19 Munshiganj  30846   Male\n22   Person22 Munshiganj  26940   Male\n23   Person23 Munshiganj  12816   Male\n30   Person30 Munshiganj  12445   Male\n31   Person31 Munshiganj  10350 Female\n34   Person34 Munshiganj  11735   Male\n41   Person41 Munshiganj  26718   Male\n42   Person42 Munshiganj  16407 Female\n43   Person43 Munshiganj  14948   Male\n44   Person44 Munshiganj  24719 Female\n46   Person46 Munshiganj  23982 Female\n49   Person49 Munshiganj  26350 Female\n58   Person58 Munshiganj  15652   Male\n60   Person60 Munshiganj  22411   Male\n62   Person62 Munshiganj  14333 Female\n63   Person63 Munshiganj  35836   Male\n70   Person70 Munshiganj  23763 Female\n72   Person72 Munshiganj  30844   Male\n74   Person74 Munshiganj  34682   Male\n84   Person84 Munshiganj  37115 Female\n86   Person86 Munshiganj  13886   Male\n87   Person87 Munshiganj  25134 Female\n90   Person90 Munshiganj  18397 Female\n93   Person93 Munshiganj  13287   Male\n98   Person98 Munshiganj  32810 Female\n100 Person100 Munshiganj  27721   Male"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#subset-data-5",
+    "href": "slides/01IntroToR.html#subset-data-5",
+    "title": "Introduction to R",
+    "section": "Subset Data 5",
+    "text": "Subset Data 5\n\nmydata[mydata$Income&gt;38000,]\n\n     Person    Zila Income Gender\n25 Person25 Gazipur  39182 Female\n28 Person28 Gazipur  39802   Male\n39 Person39   Dhaka  39656 Female\n64 Person64   Dhaka  38939 Female\n96 Person96   Dhaka  38791   Male"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#subset-data-6",
+    "href": "slides/01IntroToR.html#subset-data-6",
+    "title": "Introduction to R",
+    "section": "Subset Data 6",
+    "text": "Subset Data 6\n\ninteresting_persons = c(\"Person1\", 'Person10', 'Person21', 'Person35')\nmydata[mydata$Person%in%interesting_persons,]\n\n     Person       Zila Income Gender\n1   Person1 Munshiganj  20357   Male\n10 Person10 Munshiganj  13676   Male\n21 Person21      Dhaka  20654   Male\n35 Person35    Gazipur  12810 Female"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#add-variable",
+    "href": "slides/01IntroToR.html#add-variable",
+    "title": "Introduction to R",
+    "section": "Add Variable",
+    "text": "Add Variable\n\nmydata$Family.Size = sample(1:10, nrow(mydata), replace = T)\nhead(mydata)\n\n   Person       Zila Income Gender Family.Size\n1 Person1 Munshiganj  20357   Male           2\n2 Person2    Gazipur  16669 Female           3\n3 Person3 Munshiganj  11668   Male           2\n4 Person4 Munshiganj  26565   Male           9\n5 Person5 Munshiganj  23465 Female           1\n6 Person6    Gazipur  35057 Female           9"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#add-variable-1",
+    "href": "slides/01IntroToR.html#add-variable-1",
+    "title": "Introduction to R",
+    "section": "Add Variable",
+    "text": "Add Variable\n\nmydata$Per.Head.Income = mydata$Income/mydata$Family.Size"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#central-tendency",
+    "href": "slides/01IntroToR.html#central-tendency",
+    "title": "Introduction to R",
+    "section": "Central Tendency",
+    "text": "Central Tendency"
+  },
+  {
     "objectID": "materials.html",
     "href": "materials.html",
     "title": "Course Materials",

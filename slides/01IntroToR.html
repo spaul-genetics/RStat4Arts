@@ -444,6 +444,11 @@ Subrata Paul
 <li class="fragment">File navigation</li>
 </ul>
 </div>
+</section></section>
+<section>
+<section id="r-object" class="title-slide slide level1 center">
+<h1>R Object</h1>
+
 </section>
 <section id="assignment" class="slide level2 center">
 <h2>Assignment</h2>
@@ -566,6 +571,280 @@ Subrata Paul
 <pre><code>[1] "A" "D" "F" "G" "H" "I"</code></pre>
 </div>
 </div>
+</section>
+<section id="subset" class="slide level2 center">
+<h2>Subset</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>Zila <span class="ot">=</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">'Munshiganj'</span>, <span class="st">'Dhaka'</span>,<span class="st">'Gazipur'</span>), <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span>
+<span id="cb37-2"><a href="#cb37-2"></a>Zila</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Munshiganj" "Dhaka"      "Gazipur"    "Dhaka"      "Dhaka"     
+ [6] "Munshiganj" "Gazipur"    "Gazipur"    "Munshiganj" "Munshiganj"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a>Income <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">40000</span><span class="sc">:</span><span class="dv">100000</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span>
+<span id="cb39-2"><a href="#cb39-2"></a>Income</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 69998 72246 83364 90239 55265 59566 82285 77736 85912 66609</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a>Zila <span class="sc">==</span> <span class="st">'Munshiganj'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  TRUE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE  TRUE  TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a>Income[Zila <span class="sc">==</span> <span class="st">'Munshiganj'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 69998 59566 85912 66609</code></pre>
+</div>
+</div>
+</section>
+<section id="getting-help" class="slide level2 center">
+<h2>Getting Help</h2>
+<ul>
+<li>?command
+<ul>
+<li>?sum</li>
+<li>?for</li>
+</ul></li>
+<li>??something</li>
+</ul>
+</section>
+<section id="using-function" class="slide level2 center">
+<h2>Using Function</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">pnorm</span>(<span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6914625</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a><span class="fu">pnorm</span>(<span class="fl">0.5</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6914625</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1"></a><span class="fu">pnorm</span>(<span class="fl">0.5</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6914625</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a><span class="fu">pnorm</span>(<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="data-frame" class="title-slide slide level1 center">
+<h1>Data Frame</h1>
+
+</section>
+<section id="reading" class="slide level2 center">
+<h2>Reading</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a>mydata <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">'~/Documents/All_R_projects/RStat4Arts/data/toy.example1.csv'</span>)</span>
+<span id="cb53-2"><a href="#cb53-2"></a><span class="fu">head</span>(mydata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Person       Zila Income Gender
+1 Person1 Munshiganj  20357   Male
+2 Person2    Gazipur  16669 Female
+3 Person3 Munshiganj  11668   Male
+4 Person4 Munshiganj  26565   Male
+5 Person5 Munshiganj  23465 Female
+6 Person6    Gazipur  35057 Female</code></pre>
+</div>
+</div>
+</section>
+<section id="excel-file" class="slide level2 center">
+<h2>Excel File</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1"></a><span class="fu">install.packages</span>(<span class="st">'readxl'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb56-2"><a href="#cb56-2"></a>some_other_data <span class="ot">=</span> <span class="fu">read_excel</span>(<span class="st">'../data/toy.example1.xlsx'</span>)</span>
+<span id="cb56-3"><a href="#cb56-3"></a><span class="fu">head</span>(some_other_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 4
+  Person  Zila       Income Gender
+  &lt;chr&gt;   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt; 
+1 Person1 Munshiganj  20357 Male  
+2 Person2 Gazipur     16669 Female
+3 Person3 Munshiganj  11668 Male  
+4 Person4 Munshiganj  26565 Male  
+5 Person5 Munshiganj  23465 Female
+6 Person6 Gazipur     35057 Female</code></pre>
+</div>
+</div>
+</section>
+<section id="without-loading-package" class="slide level2 center">
+<h2>Without Loading Package</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a>some.new.data <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">'../data/toy.example1.xlsx'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="access-variable" class="slide level2 center">
+<h2>Access variable</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a>mydata<span class="sc">$</span>Zila</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] "Munshiganj" "Gazipur"    "Munshiganj" "Munshiganj" "Munshiganj"
+  [6] "Gazipur"    "Munshiganj" "Munshiganj" "Gazipur"    "Munshiganj"
+ [11] "Gazipur"    "Gazipur"    "Gazipur"    "Dhaka"      "Gazipur"   
+ [16] "Gazipur"    "Gazipur"    "Dhaka"      "Munshiganj" "Dhaka"     
+ [21] "Dhaka"      "Munshiganj" "Munshiganj" "Dhaka"      "Gazipur"   
+ [26] "Gazipur"    "Gazipur"    "Gazipur"    "Gazipur"    "Munshiganj"
+ [31] "Munshiganj" "Gazipur"    "Gazipur"    "Munshiganj" "Gazipur"   
+ [36] "Dhaka"      "Dhaka"      "Dhaka"      "Dhaka"      "Dhaka"     
+ [41] "Munshiganj" "Munshiganj" "Munshiganj" "Munshiganj" "Dhaka"     
+ [46] "Munshiganj" "Dhaka"      "Gazipur"    "Munshiganj" "Dhaka"     
+ [51] "Gazipur"    "Gazipur"    "Dhaka"      "Dhaka"      "Dhaka"     
+ [56] "Dhaka"      "Dhaka"      "Munshiganj" "Gazipur"    "Munshiganj"
+ [61] "Dhaka"      "Munshiganj" "Munshiganj" "Dhaka"      "Gazipur"   
+ [66] "Dhaka"      "Dhaka"      "Gazipur"    "Dhaka"      "Munshiganj"
+ [71] "Dhaka"      "Munshiganj" "Dhaka"      "Munshiganj" "Dhaka"     
+ [76] "Dhaka"      "Dhaka"      "Gazipur"    "Dhaka"      "Dhaka"     
+ [81] "Gazipur"    "Gazipur"    "Dhaka"      "Munshiganj" "Gazipur"   
+ [86] "Munshiganj" "Munshiganj" "Dhaka"      "Dhaka"      "Munshiganj"
+ [91] "Gazipur"    "Dhaka"      "Munshiganj" "Dhaka"      "Dhaka"     
+ [96] "Dhaka"      "Gazipur"    "Munshiganj" "Gazipur"    "Munshiganj"</code></pre>
+</div>
+</div>
+</section>
+<section id="subset-data-1" class="slide level2 center">
+<h2>Subset Data 1</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1"></a>mydata[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Person       Zila Income
+1 Person1 Munshiganj  20357
+2 Person2    Gazipur  16669
+3 Person3 Munshiganj  11668
+4 Person4 Munshiganj  26565
+5 Person5 Munshiganj  23465</code></pre>
+</div>
+</div>
+</section>
+<section id="subset-data-2" class="slide level2 center">
+<h2>Subset Data 2</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1"></a>mydata[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Person       Zila Income Gender
+1 Person1 Munshiganj  20357   Male
+2 Person2    Gazipur  16669 Female
+3 Person3 Munshiganj  11668   Male
+4 Person4 Munshiganj  26565   Male
+5 Person5 Munshiganj  23465 Female</code></pre>
+</div>
+</div>
+</section>
+<section id="subset-data-3" class="slide level2 center">
+<h2>Subset Data 3</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1"></a>mydata[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">7</span>),<span class="fu">c</span>(<span class="st">'Person'</span>, <span class="st">'Zila'</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Person       Zila
+1 Person1 Munshiganj
+3 Person3 Munshiganj
+6 Person6    Gazipur
+7 Person7 Munshiganj</code></pre>
+</div>
+</div>
+</section>
+<section id="subset-data-4" class="slide level2 center">
+<h2>Subset Data 4</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1"></a>mydata[mydata<span class="sc">$</span>Zila<span class="sc">==</span><span class="st">'Munshiganj'</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       Person       Zila Income Gender
+1     Person1 Munshiganj  20357   Male
+3     Person3 Munshiganj  11668   Male
+4     Person4 Munshiganj  26565   Male
+5     Person5 Munshiganj  23465 Female
+7     Person7 Munshiganj  36276   Male
+8     Person8 Munshiganj  29784 Female
+10   Person10 Munshiganj  13676   Male
+19   Person19 Munshiganj  30846   Male
+22   Person22 Munshiganj  26940   Male
+23   Person23 Munshiganj  12816   Male
+30   Person30 Munshiganj  12445   Male
+31   Person31 Munshiganj  10350 Female
+34   Person34 Munshiganj  11735   Male
+41   Person41 Munshiganj  26718   Male
+42   Person42 Munshiganj  16407 Female
+43   Person43 Munshiganj  14948   Male
+44   Person44 Munshiganj  24719 Female
+46   Person46 Munshiganj  23982 Female
+49   Person49 Munshiganj  26350 Female
+58   Person58 Munshiganj  15652   Male
+60   Person60 Munshiganj  22411   Male
+62   Person62 Munshiganj  14333 Female
+63   Person63 Munshiganj  35836   Male
+70   Person70 Munshiganj  23763 Female
+72   Person72 Munshiganj  30844   Male
+74   Person74 Munshiganj  34682   Male
+84   Person84 Munshiganj  37115 Female
+86   Person86 Munshiganj  13886   Male
+87   Person87 Munshiganj  25134 Female
+90   Person90 Munshiganj  18397 Female
+93   Person93 Munshiganj  13287   Male
+98   Person98 Munshiganj  32810 Female
+100 Person100 Munshiganj  27721   Male</code></pre>
+</div>
+</div>
+</section>
+<section id="subset-data-5" class="slide level2 center">
+<h2>Subset Data 5</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1"></a>mydata[mydata<span class="sc">$</span>Income<span class="sc">&gt;</span><span class="dv">38000</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Person    Zila Income Gender
+25 Person25 Gazipur  39182 Female
+28 Person28 Gazipur  39802   Male
+39 Person39   Dhaka  39656 Female
+64 Person64   Dhaka  38939 Female
+96 Person96   Dhaka  38791   Male</code></pre>
+</div>
+</div>
+</section>
+<section id="subset-data-6" class="slide level2 center">
+<h2>Subset Data 6</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1"></a>interesting_persons <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Person1"</span>, <span class="st">'Person10'</span>, <span class="st">'Person21'</span>, <span class="st">'Person35'</span>)</span>
+<span id="cb71-2"><a href="#cb71-2"></a>mydata[mydata<span class="sc">$</span>Person<span class="sc">%in%</span>interesting_persons,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Person       Zila Income Gender
+1   Person1 Munshiganj  20357   Male
+10 Person10 Munshiganj  13676   Male
+21 Person21      Dhaka  20654   Male
+35 Person35    Gazipur  12810 Female</code></pre>
+</div>
+</div>
+</section>
+<section id="add-variable" class="slide level2 center">
+<h2>Add Variable</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1"></a>mydata<span class="sc">$</span>Family.Size <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="fu">nrow</span>(mydata), <span class="at">replace =</span> T)</span>
+<span id="cb73-2"><a href="#cb73-2"></a><span class="fu">head</span>(mydata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Person       Zila Income Gender Family.Size
+1 Person1 Munshiganj  20357   Male           2
+2 Person2    Gazipur  16669 Female           3
+3 Person3 Munshiganj  11668   Male           2
+4 Person4 Munshiganj  26565   Male           9
+5 Person5 Munshiganj  23465 Female           1
+6 Person6    Gazipur  35057 Female           9</code></pre>
+</div>
+</div>
+</section>
+<section id="add-variable-1" class="slide level2 center">
+<h2>Add Variable</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1"></a>mydata<span class="sc">$</span>Per.Head.Income <span class="ot">=</span> mydata<span class="sc">$</span>Income<span class="sc">/</span>mydata<span class="sc">$</span>Family.Size</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section>
+<section>
+<section id="basic-stats" class="title-slide slide level1 center">
+<h1>Basic Stats</h1>
+
+</section>
+<section id="central-tendency" class="slide level2 center">
+<h2>Central Tendency</h2>
 
 <div class="footer footer-default">
 
