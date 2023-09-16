@@ -67,7 +67,7 @@
     "href": "slides/01IntroToR.html#subset",
     "title": "Introduction to R",
     "section": "Subset",
-    "text": "Subset\n\nZila = sample(c('Munshiganj', 'Dhaka','Gazipur'), size = 10, replace = T)\nZila\n\n [1] \"Gazipur\"    \"Dhaka\"      \"Dhaka\"      \"Dhaka\"      \"Gazipur\"   \n [6] \"Munshiganj\" \"Gazipur\"    \"Gazipur\"    \"Dhaka\"      \"Munshiganj\"\n\nIncome = sample(40000:100000, size = 10, replace = T)\nIncome\n\n [1] 59535 65882 91480 52619 78655 84645 66985 60526 91638 85794\n\nZila == 'Munshiganj'\n\n [1] FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE  TRUE\n\nIncome[Zila == 'Munshiganj']\n\n[1] 84645 85794"
+    "text": "Subset\n\nZila = sample(c('Munshiganj', 'Dhaka','Gazipur'), size = 10, replace = T)\nZila\n\n [1] \"Dhaka\"      \"Munshiganj\" \"Gazipur\"    \"Gazipur\"    \"Munshiganj\"\n [6] \"Munshiganj\" \"Dhaka\"      \"Dhaka\"      \"Dhaka\"      \"Dhaka\"     \n\nIncome = sample(40000:100000, size = 10, replace = T)\nIncome\n\n [1] 92530 66139 51488 54878 76072 91607 77666 79632 91087 80389\n\nZila == 'Munshiganj'\n\n [1] FALSE  TRUE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE\n\nIncome[Zila == 'Munshiganj']\n\n[1] 66139 76072 91607"
   },
   {
     "objectID": "slides/01IntroToR.html#getting-help",
@@ -165,7 +165,7 @@
     "href": "slides/01IntroToR.html#add-variable",
     "title": "Introduction to R",
     "section": "Add Variable",
-    "text": "Add Variable\n\nmydata$Family.Size = sample(1:10, nrow(mydata), replace = T)\nhead(mydata)\n\n   Person       Zila Income Gender Family.Size\n1 Person1 Munshiganj  20357   Male           8\n2 Person2    Gazipur  16669 Female           3\n3 Person3 Munshiganj  11668   Male           4\n4 Person4 Munshiganj  26565   Male           9\n5 Person5 Munshiganj  23465 Female           1\n6 Person6    Gazipur  35057 Female           2"
+    "text": "Add Variable\n\nmydata$Family.Size = sample(1:10, nrow(mydata), replace = T)\nhead(mydata)\n\n   Person       Zila Income Gender Family.Size\n1 Person1 Munshiganj  20357   Male           4\n2 Person2    Gazipur  16669 Female           7\n3 Person3 Munshiganj  11668   Male           6\n4 Person4 Munshiganj  26565   Male           7\n5 Person5 Munshiganj  23465 Female           7\n6 Person6    Gazipur  35057 Female           4"
   },
   {
     "objectID": "slides/01IntroToR.html#add-variable-1",
@@ -242,7 +242,7 @@
     "href": "slides/01IntroToR.html#theme",
     "title": "Introduction to R",
     "section": "Theme",
-    "text": "Theme\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, y = Sepal.Width, color = Species)+\n  geom_point()+\n  theme_bw()+\n  labs(x = 'Sepal Length', y = 'Sepal Width')+\n  theme(legend.position = 'top', \n        axis.title = element_text(face = 'bold'))"
+    "text": "Theme\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, y = Sepal.Width, color = Species)+\n  geom_point()+\n  theme_bw()+\n  labs(x = 'Sepal Length', y = 'Sepal Width')+\n  theme(legend.position = 'top', \n        axis.title = element_text(face = 'bold'))\n\n\n\n\n🔗 spaul-genetics.github.io/RStat4Arts"
   },
   {
     "objectID": "materials.html",
