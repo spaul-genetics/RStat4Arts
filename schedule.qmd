@@ -1,0 +1,28 @@
+---
+title: "Schedule"
+listing:
+  - id: schedule
+    contents:
+      - slides/*.qmd
+    type: table
+    fields: [title, description, subtitle]
+    field-display-names:
+      title: "Topic"
+      description: "Description"
+      subtitle: "Sub-topic"
+    date-format: "MMMM DD, YYYY"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+ #tbl-colwidths: [5,20,50,25]
+editor: visual
+---
+
+## Weekly schedule
+
+::: {#schedule}
+:::
+
+### Homework
+
+Homework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.

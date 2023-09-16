@@ -1,0 +1,5 @@
+---
+title: "Basic Statistics in R for Arts"
+---
+
+In this course I will introduce you to R, the wonderful and powerful programming language for statistical analysis, general data analysis, machine learning and many more. We will learn enough statistical background to run simple data analysis, visualization, hypothesis testing, linear models such as multiple linear regression, and logistic regression, etc. 
