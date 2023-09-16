@@ -578,21 +578,21 @@ Subrata Paul
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>Zila <span class="ot">=</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">'Munshiganj'</span>, <span class="st">'Dhaka'</span>,<span class="st">'Gazipur'</span>), <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span>
 <span id="cb37-2"><a href="#cb37-2"></a>Zila</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "Munshiganj" "Dhaka"      "Gazipur"    "Dhaka"      "Dhaka"     
- [6] "Munshiganj" "Gazipur"    "Gazipur"    "Munshiganj" "Munshiganj"</code></pre>
+<pre><code> [1] "Gazipur"    "Dhaka"      "Dhaka"      "Dhaka"      "Gazipur"   
+ [6] "Munshiganj" "Gazipur"    "Gazipur"    "Dhaka"      "Munshiganj"</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a>Income <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">40000</span><span class="sc">:</span><span class="dv">100000</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span>
 <span id="cb39-2"><a href="#cb39-2"></a>Income</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 69998 72246 83364 90239 55265 59566 82285 77736 85912 66609</code></pre>
+<pre><code> [1] 59535 65882 91480 52619 78655 84645 66985 60526 91638 85794</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a>Zila <span class="sc">==</span> <span class="st">'Munshiganj'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  TRUE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE  TRUE  TRUE</code></pre>
+<pre><code> [1] FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE  TRUE</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a>Income[Zila <span class="sc">==</span> <span class="st">'Munshiganj'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 69998 59566 85912 66609</code></pre>
+<pre><code>[1] 84645 85794</code></pre>
 </div>
 </div>
 </section>
@@ -627,6 +627,27 @@ Subrata Paul
 <pre><code>[1] 0</code></pre>
 </div>
 </div>
+</section>
+<section id="sequence" class="slide level2 center">
+<h2>Sequence</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 2 3 4 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1"></a><span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 2 3 4 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1"></a><span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 3 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">5</span>, <span class="at">length.out =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.000000 2.333333 3.666667 5.000000</code></pre>
+</div>
+</div>
 </section></section>
 <section>
 <section id="data-frame" class="title-slide slide level1 center">
@@ -636,8 +657,8 @@ Subrata Paul
 <section id="reading" class="slide level2 center">
 <h2>Reading</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a>mydata <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">'~/Documents/All_R_projects/RStat4Arts/data/toy.example1.csv'</span>)</span>
-<span id="cb53-2"><a href="#cb53-2"></a><span class="fu">head</span>(mydata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1"></a>mydata <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">'~/Documents/All_R_projects/RStat4Arts/data/toy.example1.csv'</span>)</span>
+<span id="cb61-2"><a href="#cb61-2"></a><span class="fu">head</span>(mydata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Person       Zila Income Gender
 1 Person1 Munshiganj  20357   Male
@@ -652,12 +673,12 @@ Subrata Paul
 <section id="excel-file" class="slide level2 center">
 <h2>Excel File</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1"></a><span class="fu">install.packages</span>(<span class="st">'readxl'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1"></a><span class="fu">install.packages</span>(<span class="st">'readxl'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb56-2"><a href="#cb56-2"></a>some_other_data <span class="ot">=</span> <span class="fu">read_excel</span>(<span class="st">'../data/toy.example1.xlsx'</span>)</span>
-<span id="cb56-3"><a href="#cb56-3"></a><span class="fu">head</span>(some_other_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb64-2"><a href="#cb64-2"></a>some_other_data <span class="ot">=</span> <span class="fu">read_excel</span>(<span class="st">'../data/toy.example1.xlsx'</span>)</span>
+<span id="cb64-3"><a href="#cb64-3"></a><span class="fu">head</span>(some_other_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 4
   Person  Zila       Income Gender
@@ -674,13 +695,13 @@ Subrata Paul
 <section id="without-loading-package" class="slide level2 center">
 <h2>Without Loading Package</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a>some.new.data <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">'../data/toy.example1.xlsx'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1"></a>some.new.data <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">'../data/toy.example1.xlsx'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="access-variable" class="slide level2 center">
 <h2>Access variable</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a>mydata<span class="sc">$</span>Zila</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1"></a>mydata<span class="sc">$</span>Zila</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  [1] "Munshiganj" "Gazipur"    "Munshiganj" "Munshiganj" "Munshiganj"
   [6] "Gazipur"    "Munshiganj" "Munshiganj" "Gazipur"    "Munshiganj"
@@ -708,7 +729,7 @@ Subrata Paul
 <section id="subset-data-1" class="slide level2 center">
 <h2>Subset Data 1</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1"></a>mydata[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1"></a>mydata[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Person       Zila Income
 1 Person1 Munshiganj  20357
@@ -722,7 +743,7 @@ Subrata Paul
 <section id="subset-data-2" class="slide level2 center">
 <h2>Subset Data 2</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1"></a>mydata[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1"></a>mydata[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Person       Zila Income Gender
 1 Person1 Munshiganj  20357   Male
@@ -736,7 +757,7 @@ Subrata Paul
 <section id="subset-data-3" class="slide level2 center">
 <h2>Subset Data 3</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1"></a>mydata[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">7</span>),<span class="fu">c</span>(<span class="st">'Person'</span>, <span class="st">'Zila'</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1"></a>mydata[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">7</span>),<span class="fu">c</span>(<span class="st">'Person'</span>, <span class="st">'Zila'</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Person       Zila
 1 Person1 Munshiganj
@@ -749,7 +770,7 @@ Subrata Paul
 <section id="subset-data-4" class="slide level2 center">
 <h2>Subset Data 4</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1"></a>mydata[mydata<span class="sc">$</span>Zila<span class="sc">==</span><span class="st">'Munshiganj'</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1"></a>mydata[mydata<span class="sc">$</span>Zila<span class="sc">==</span><span class="st">'Munshiganj'</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>       Person       Zila Income Gender
 1     Person1 Munshiganj  20357   Male
@@ -791,7 +812,7 @@ Subrata Paul
 <section id="subset-data-5" class="slide level2 center">
 <h2>Subset Data 5</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1"></a>mydata[mydata<span class="sc">$</span>Income<span class="sc">&gt;</span><span class="dv">38000</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1"></a>mydata[mydata<span class="sc">$</span>Income<span class="sc">&gt;</span><span class="dv">38000</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Person    Zila Income Gender
 25 Person25 Gazipur  39182 Female
@@ -805,8 +826,8 @@ Subrata Paul
 <section id="subset-data-6" class="slide level2 center">
 <h2>Subset Data 6</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1"></a>interesting_persons <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Person1"</span>, <span class="st">'Person10'</span>, <span class="st">'Person21'</span>, <span class="st">'Person35'</span>)</span>
-<span id="cb71-2"><a href="#cb71-2"></a>mydata[mydata<span class="sc">$</span>Person<span class="sc">%in%</span>interesting_persons,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1"></a>interesting_persons <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Person1"</span>, <span class="st">'Person10'</span>, <span class="st">'Person21'</span>, <span class="st">'Person35'</span>)</span>
+<span id="cb79-2"><a href="#cb79-2"></a>mydata[mydata<span class="sc">$</span>Person<span class="sc">%in%</span>interesting_persons,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     Person       Zila Income Gender
 1   Person1 Munshiganj  20357   Male
@@ -819,23 +840,23 @@ Subrata Paul
 <section id="add-variable" class="slide level2 center">
 <h2>Add Variable</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1"></a>mydata<span class="sc">$</span>Family.Size <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="fu">nrow</span>(mydata), <span class="at">replace =</span> T)</span>
-<span id="cb73-2"><a href="#cb73-2"></a><span class="fu">head</span>(mydata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1"></a>mydata<span class="sc">$</span>Family.Size <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="fu">nrow</span>(mydata), <span class="at">replace =</span> T)</span>
+<span id="cb81-2"><a href="#cb81-2"></a><span class="fu">head</span>(mydata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Person       Zila Income Gender Family.Size
-1 Person1 Munshiganj  20357   Male           2
+1 Person1 Munshiganj  20357   Male           8
 2 Person2    Gazipur  16669 Female           3
-3 Person3 Munshiganj  11668   Male           2
+3 Person3 Munshiganj  11668   Male           4
 4 Person4 Munshiganj  26565   Male           9
 5 Person5 Munshiganj  23465 Female           1
-6 Person6    Gazipur  35057 Female           9</code></pre>
+6 Person6    Gazipur  35057 Female           2</code></pre>
 </div>
 </div>
 </section>
 <section id="add-variable-1" class="slide level2 center">
 <h2>Add Variable</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1"></a>mydata<span class="sc">$</span>Per.Head.Income <span class="ot">=</span> mydata<span class="sc">$</span>Income<span class="sc">/</span>mydata<span class="sc">$</span>Family.Size</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1"></a>mydata<span class="sc">$</span>Per.Head.Income <span class="ot">=</span> mydata<span class="sc">$</span>Income<span class="sc">/</span>mydata<span class="sc">$</span>Family.Size</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
@@ -845,8 +866,105 @@ Subrata Paul
 </section>
 <section id="central-tendency" class="slide level2 center">
 <h2>Central Tendency</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Length)</span>
+<span id="cb84-2"><a href="#cb84-2"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="fu">seq</span>(<span class="fl">4.5</span>, <span class="dv">8</span>, <span class="fl">0.5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<div class="footer footer-default">
+</div>
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"><div class="cell">
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1"></a><span class="fu">table</span>(<span class="fu">cut</span>(iris<span class="sc">$</span>Sepal.Length, <span class="fu">seq</span>(<span class="dv">4</span>,<span class="dv">8</span>,<span class="fl">0.5</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+(4,4.5] (4.5,5] (5,5.5] (5.5,6] (6,6.5] (6.5,7] (7,7.5] (7.5,8] 
+      5      27      27      30      31      18       6       6 </code></pre>
+</div>
+</div>
+</section>
+<section id="central-tendency-cont." class="slide level2 center">
+<h2>Central Tendency (Cont.)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length, <span class="at">breaks =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-28-1.png" width="960" class="r-stretch"></section>
+<section id="measures-of-center" class="slide level2 center">
+<h2>Measures of Center</h2>
+<div>
+<ul>
+<li class="fragment">Mean</li>
+<li class="fragment">Median</li>
+<li class="fragment">Mode</li>
+</ul>
+</div>
+</section>
+<section id="spread" class="slide level2 center">
+<h2>Spread</h2>
+
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-29-1.png" width="960" class="r-stretch"></section>
+<section id="measures-of-spread" class="slide level2 center">
+<h2>Measures of spread</h2>
+<ul>
+<li>Range</li>
+<li>Standard Deviation</li>
+<li>Variance</li>
+</ul>
+</section>
+<section id="boxplot" class="slide level2 center">
+<h2>Boxplot</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> plot_data, <span class="fu">aes</span>(<span class="at">y =</span> Run, <span class="at">x =</span> Player, <span class="at">fill =</span> Player))<span class="sc">+</span><span class="fu">geom_boxplot</span>()<span class="sc">+</span>ggthemes<span class="sc">::</span><span class="fu">scale_fill_tableau</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-30-1.png" width="960" class="r-stretch"></section></section>
+<section>
+<section id="plotting" class="title-slide slide level1 center">
+<h1>Plotting</h1>
+
+</section>
+<section id="r-default" class="slide level2 center">
+<h2>R Default</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Length, iris<span class="sc">$</span>Sepal.Width)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-31-1.png" width="960" class="r-stretch"></section>
+<section id="ggplot2" class="slide level2 center">
+<h2>ggplot2</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1"></a><span class="fu">install.packages</span>(<span class="st">'ggplot2'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb91-2"><a href="#cb91-2"></a></span>
+<span id="cb91-3"><a href="#cb91-3"></a><span class="fu">ggplot</span>(<span class="at">data =</span> iris)<span class="sc">+</span></span>
+<span id="cb91-4"><a href="#cb91-4"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width)<span class="sc">+</span></span>
+<span id="cb91-5"><a href="#cb91-5"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-33-1.png" width="960" class="r-stretch"></section>
+<section id="color-points" class="slide level2 center">
+<h2>Color points</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> iris)<span class="sc">+</span></span>
+<span id="cb92-2"><a href="#cb92-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width, <span class="at">color =</span> Species)<span class="sc">+</span></span>
+<span id="cb92-3"><a href="#cb92-3"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-34-1.png" width="960" class="r-stretch"></section>
+<section id="theme" class="slide level2 center">
+<h2>Theme</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> iris)<span class="sc">+</span></span>
+<span id="cb93-2"><a href="#cb93-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width, <span class="at">color =</span> Species)<span class="sc">+</span></span>
+<span id="cb93-3"><a href="#cb93-3"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb93-4"><a href="#cb93-4"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb93-5"><a href="#cb93-5"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">'Sepal Length'</span>, <span class="at">y =</span> <span class="st">'Sepal Width'</span>)<span class="sc">+</span></span>
+<span id="cb93-6"><a href="#cb93-6"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">'top'</span>, </span>
+<span id="cb93-7"><a href="#cb93-7"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">'bold'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-35-1.png" width="960" class="r-stretch"><div class="footer footer-default">
 
 </div>
 </section></section>

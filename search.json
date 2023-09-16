@@ -67,7 +67,7 @@
     "href": "slides/01IntroToR.html#subset",
     "title": "Introduction to R",
     "section": "Subset",
-    "text": "Subset\n\nZila = sample(c('Munshiganj', 'Dhaka','Gazipur'), size = 10, replace = T)\nZila\n\n [1] \"Munshiganj\" \"Dhaka\"      \"Gazipur\"    \"Dhaka\"      \"Dhaka\"     \n [6] \"Munshiganj\" \"Gazipur\"    \"Gazipur\"    \"Munshiganj\" \"Munshiganj\"\n\nIncome = sample(40000:100000, size = 10, replace = T)\nIncome\n\n [1] 69998 72246 83364 90239 55265 59566 82285 77736 85912 66609\n\nZila == 'Munshiganj'\n\n [1]  TRUE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE  TRUE  TRUE\n\nIncome[Zila == 'Munshiganj']\n\n[1] 69998 59566 85912 66609"
+    "text": "Subset\n\nZila = sample(c('Munshiganj', 'Dhaka','Gazipur'), size = 10, replace = T)\nZila\n\n [1] \"Gazipur\"    \"Dhaka\"      \"Dhaka\"      \"Dhaka\"      \"Gazipur\"   \n [6] \"Munshiganj\" \"Gazipur\"    \"Gazipur\"    \"Dhaka\"      \"Munshiganj\"\n\nIncome = sample(40000:100000, size = 10, replace = T)\nIncome\n\n [1] 59535 65882 91480 52619 78655 84645 66985 60526 91638 85794\n\nZila == 'Munshiganj'\n\n [1] FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE  TRUE\n\nIncome[Zila == 'Munshiganj']\n\n[1] 84645 85794"
   },
   {
     "objectID": "slides/01IntroToR.html#getting-help",
@@ -82,6 +82,13 @@
     "title": "Introduction to R",
     "section": "Using Function",
     "text": "Using Function\n\npnorm(0.5)\n\n[1] 0.6914625\n\npnorm(0.5, 0, 1)\n\n[1] 0.6914625\n\npnorm(0.5, mean = 0, sd = 1)\n\n[1] 0.6914625\n\npnorm(0.5, 1, 0)\n\n[1] 0"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#sequence",
+    "href": "slides/01IntroToR.html#sequence",
+    "title": "Introduction to R",
+    "section": "Sequence",
+    "text": "Sequence\n\n1:5\n\n[1] 1 2 3 4 5\n\nseq(1, 5)\n\n[1] 1 2 3 4 5\n\nseq(1,5,2)\n\n[1] 1 3 5\n\nseq(from = 1, to = 5, length.out = 4)\n\n[1] 1.000000 2.333333 3.666667 5.000000"
   },
   {
     "objectID": "slides/01IntroToR.html#reading",
@@ -158,7 +165,7 @@
     "href": "slides/01IntroToR.html#add-variable",
     "title": "Introduction to R",
     "section": "Add Variable",
-    "text": "Add Variable\n\nmydata$Family.Size = sample(1:10, nrow(mydata), replace = T)\nhead(mydata)\n\n   Person       Zila Income Gender Family.Size\n1 Person1 Munshiganj  20357   Male           2\n2 Person2    Gazipur  16669 Female           3\n3 Person3 Munshiganj  11668   Male           2\n4 Person4 Munshiganj  26565   Male           9\n5 Person5 Munshiganj  23465 Female           1\n6 Person6    Gazipur  35057 Female           9"
+    "text": "Add Variable\n\nmydata$Family.Size = sample(1:10, nrow(mydata), replace = T)\nhead(mydata)\n\n   Person       Zila Income Gender Family.Size\n1 Person1 Munshiganj  20357   Male           8\n2 Person2    Gazipur  16669 Female           3\n3 Person3 Munshiganj  11668   Male           4\n4 Person4 Munshiganj  26565   Male           9\n5 Person5 Munshiganj  23465 Female           1\n6 Person6    Gazipur  35057 Female           2"
   },
   {
     "objectID": "slides/01IntroToR.html#add-variable-1",
@@ -172,7 +179,70 @@
     "href": "slides/01IntroToR.html#central-tendency",
     "title": "Introduction to R",
     "section": "Central Tendency",
-    "text": "Central Tendency"
+    "text": "Central Tendency\n\nplot(iris$Sepal.Length)\nabline(h = seq(4.5, 8, 0.5))\n\n\n\ntable(cut(iris$Sepal.Length, seq(4,8,0.5)))\n\n\n(4,4.5] (4.5,5] (5,5.5] (5.5,6] (6,6.5] (6.5,7] (7,7.5] (7.5,8] \n      5      27      27      30      31      18       6       6"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#central-tendency-cont.",
+    "href": "slides/01IntroToR.html#central-tendency-cont.",
+    "title": "Introduction to R",
+    "section": "Central Tendency (Cont.)",
+    "text": "Central Tendency (Cont.)\n\nhist(iris$Sepal.Length, breaks = 20)"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#measures-of-center",
+    "href": "slides/01IntroToR.html#measures-of-center",
+    "title": "Introduction to R",
+    "section": "Measures of Center",
+    "text": "Measures of Center\n\n\nMean\nMedian\nMode"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#spread",
+    "href": "slides/01IntroToR.html#spread",
+    "title": "Introduction to R",
+    "section": "Spread",
+    "text": "Spread"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#measures-of-spread",
+    "href": "slides/01IntroToR.html#measures-of-spread",
+    "title": "Introduction to R",
+    "section": "Measures of spread",
+    "text": "Measures of spread\n\nRange\nStandard Deviation\nVariance"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#boxplot",
+    "href": "slides/01IntroToR.html#boxplot",
+    "title": "Introduction to R",
+    "section": "Boxplot",
+    "text": "Boxplot\n\nggplot(data = plot_data, aes(y = Run, x = Player, fill = Player))+geom_boxplot()+ggthemes::scale_fill_tableau()"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#r-default",
+    "href": "slides/01IntroToR.html#r-default",
+    "title": "Introduction to R",
+    "section": "R Default",
+    "text": "R Default\n\nplot(iris$Sepal.Length, iris$Sepal.Width)"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#ggplot2",
+    "href": "slides/01IntroToR.html#ggplot2",
+    "title": "Introduction to R",
+    "section": "ggplot2",
+    "text": "ggplot2\n\ninstall.packages('ggplot2')\n\n\nlibrary(ggplot2)\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, y = Sepal.Width)+\n  geom_point()"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#color-points",
+    "href": "slides/01IntroToR.html#color-points",
+    "title": "Introduction to R",
+    "section": "Color points",
+    "text": "Color points\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, y = Sepal.Width, color = Species)+\n  geom_point()"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#theme",
+    "href": "slides/01IntroToR.html#theme",
+    "title": "Introduction to R",
+    "section": "Theme",
+    "text": "Theme\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, y = Sepal.Width, color = Species)+\n  geom_point()+\n  theme_bw()+\n  labs(x = 'Sepal Length', y = 'Sepal Width')+\n  theme(legend.position = 'top', \n        axis.title = element_text(face = 'bold'))"
   },
   {
     "objectID": "materials.html",
