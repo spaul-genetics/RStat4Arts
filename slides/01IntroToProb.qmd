@@ -1,0 +1,91 @@
+---
+title: "Introduction to Probability"
+author: "Subrata Paul"
+subtitle: "Theory"
+description: "Important basics of probability"
+footer: "[🔗 spaul-genetics.github.io/RStat4Arts](https://spaul-genetics.github.io/RStat4Arts)"
+format: 
+  revealjs:
+    theme: solarized
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+  echo: true
+---
+
+# Probability
+
+## Coin Toss
+
+::: incremental
+
+* If you toss a coint, what is the probability that you get a head (H)?
+
+* 1/2
+
+* Why?
+
+* There were two "mutually exclusive and exhaustive" outcomes and head is one of them 
+
+:::
+
+## Dice 
+
+::: incremental
+
+* If you roll a dice what is the probability of getting an even number?
+
+* 3/6
+
+* Why?
+
+* There are 6 "mutually exclusive and exhaustive" outcomes and three of them are even.
+
+:::
+
+## Some Probability Rules
+
+::: incremental
+
+* $P(\emptyset) = 0$
+* $P(\Omega) = 1$
+* $P(A^c) = 1 - P(A)$
+* $P(B|A) = \frac{P(A\cap B)}{P(A)}$
+* $P(A\cap B) = P(B|A)P(A) = P(A|B)P(B)$
+* $P(A\cap B) = P(A)P(B) \Rightarrow \text{Independence}$
+
+:::
+
+# Random Variable
+
+## Definition
+
+* In some sense a random variable is not a variable
+* It is a function from a sample space to real number
+* Can be discrete or continuous 
+
+## Discrete RV
+
+::: incremental
+
+* Example: Binomial
+
+* Definition: number of successes in a fixed number of trials
+
+* Each survey participant is a trial; number of male is a binomial random variable
+
+* Depends on two parameters: $n$ - number of trials, $p$ - probability of success
+
+* Mean : $np$
+
+* Variance : $np(1-p)$
+
+:::
+
+## Continuous RV
+
+

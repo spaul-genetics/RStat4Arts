@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Course Title"
+  title: "R and Stat Basics"
   sidebar:
     background: primary
     # logo: "images/logo.png"
@@ -19,8 +19,6 @@ website:
         text: Home
       - href: schedule.qmd
         text: Schedule
-      - href: materials.qmd
-        text: Materials
       - href: https://github.com/spaul-genetics/quarto-course-website-template/discussions
         text: Forum
 
