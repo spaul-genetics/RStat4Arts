@@ -2,6 +2,7 @@
   {
     "listing": "/schedule.html",
     "items": [
+      "/slides/01IntroToProb.html",
       "/slides/01IntroToR.html"
     ]
   }

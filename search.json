@@ -1,5 +1,82 @@
 [
   {
+    "objectID": "slides/01IntroToProb.html#coin-toss",
+    "href": "slides/01IntroToProb.html#coin-toss",
+    "title": "Introduction to Probability",
+    "section": "Coin Toss",
+    "text": "Coin Toss\n\n\nIf you toss a coint, what is the probability that you get a head (H)?\n1/2\nWhy?\nThere were two “mutually exclusive and exhaustive” outcomes and head is one of them"
+  },
+  {
+    "objectID": "slides/01IntroToProb.html#dice",
+    "href": "slides/01IntroToProb.html#dice",
+    "title": "Introduction to Probability",
+    "section": "Dice",
+    "text": "Dice\n\n\nIf you roll a dice what is the probability of getting an even number?\n3/6\nWhy?\nThere are 6 “mutually exclusive and exhaustive” outcomes and three of them are even."
+  },
+  {
+    "objectID": "slides/01IntroToProb.html#some-probability-rules",
+    "href": "slides/01IntroToProb.html#some-probability-rules",
+    "title": "Introduction to Probability",
+    "section": "Some Probability Rules",
+    "text": "Some Probability Rules\n\n\n\\(P(\\emptyset) = 0\\)\n\\(P(\\Omega) = 1\\)\n\\(P(A^c) = 1 - P(A)\\)\n\\(P(B|A) = \\frac{P(A\\cap B)}{P(A)}\\)\n\\(P(A\\cap B) = P(B|A)P(A) = P(A|B)P(B)\\)\n\\(P(A\\cap B) = P(A)P(B) \\Rightarrow \\text{Independence}\\)"
+  },
+  {
+    "objectID": "slides/01IntroToProb.html#definition",
+    "href": "slides/01IntroToProb.html#definition",
+    "title": "Introduction to Probability",
+    "section": "Definition",
+    "text": "Definition\n\nIn some sense a random variable is not a variable\nIt is a function from a sample space to real number\nCan be discrete or continuous"
+  },
+  {
+    "objectID": "slides/01IntroToProb.html#discrete-rv",
+    "href": "slides/01IntroToProb.html#discrete-rv",
+    "title": "Introduction to Probability",
+    "section": "Discrete RV",
+    "text": "Discrete RV\n\n\nExample: Binomial\nDefinition: number of successes in a fixed number of trials\nEach survey participant is a trial; number of male is a binomial random variable\nDepends on two parameters: \\(n\\) - number of trials, \\(p\\) - probability of success\nMean : \\(np\\)\nVariance : \\(np(1-p)\\)"
+  },
+  {
+    "objectID": "slides/01IntroToProb.html#continuous-rv",
+    "href": "slides/01IntroToProb.html#continuous-rv",
+    "title": "Introduction to Probability",
+    "section": "Continuous RV",
+    "text": "Continuous RV\n\n\n🔗 spaul-genetics.github.io/RStat4Arts"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nIntroduction to Probability\n\n\nImportant basics of probability\n\n\nTheory\n\n\n\n\nIntroduction to R\n\n\nImportant basics of R\n\n\nVery Basic\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "schedule.html#weekly-schedule",
+    "href": "schedule.html#weekly-schedule",
+    "title": "Schedule",
+    "section": "",
+    "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nIntroduction to Probability\n\n\nImportant basics of probability\n\n\nTheory\n\n\n\n\nIntroduction to R\n\n\nImportant basics of R\n\n\nVery Basic\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "schedule_bu.html",
+    "href": "schedule_bu.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Basic Statistics in R for non-STEM",
+    "section": "",
+    "text": "In this course I will introduce you to R, the wonderful and powerful programming language for statistical analysis, general data analysis, machine learning and many more. We will learn enough statistical background to run simple data analysis, visualization, hypothesis testing, linear models such as multiple linear regression, and logistic regression, etc."
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "Datasets\nSlides"
+  },
+  {
     "objectID": "slides/01IntroToR.html#r",
     "href": "slides/01IntroToR.html#r",
     "title": "Introduction to R",
@@ -243,40 +320,5 @@
     "title": "Introduction to R",
     "section": "Theme",
     "text": "Theme\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, y = Sepal.Width, color = Species)+\n  geom_point()+\n  theme_bw()+\n  labs(x = 'Sepal Length', y = 'Sepal Width')+\n  theme(legend.position = 'top', \n        axis.title = element_text(face = 'bold'))\n\n\n\n\n🔗 spaul-genetics.github.io/RStat4Arts"
-  },
-  {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Course Materials",
-    "section": "",
-    "text": "Datasets\nSlides"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Basic Statistics in R for Arts",
-    "section": "",
-    "text": "In this course I will introduce you to R, the wonderful and powerful programming language for statistical analysis, general data analysis, machine learning and many more. We will learn enough statistical background to run simple data analysis, visualization, hypothesis testing, linear models such as multiple linear regression, and logistic regression, etc."
-  },
-  {
-    "objectID": "schedule_bu.html",
-    "href": "schedule_bu.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nIntroduction to R\n\n\nImportant basics of R\n\n\nVery Basic\n\n\n\n\n\n\nNo matching items\n\n\n\n\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment."
-  },
-  {
-    "objectID": "schedule.html#weekly-schedule",
-    "href": "schedule.html#weekly-schedule",
-    "title": "Schedule",
-    "section": "",
-    "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nIntroduction to R\n\n\nImportant basics of R\n\n\nVery Basic\n\n\n\n\n\n\nNo matching items\n\n\n\n\nHomework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment."
   }
 ]
