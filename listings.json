@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/assignments.html",
+    "items": [
+      "/assignments/01Assignment1.html"
+    ]
+  },
+  {
     "listing": "/schedule.html",
     "items": [
       "/slides/01IntroToProb.html",

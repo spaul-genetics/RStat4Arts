@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nAssignment 1\n\n\n\n\n\nCovers basics of R\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "assignments.html#assignments",
+    "href": "assignments.html#assignments",
+    "title": "Assignments",
+    "section": "",
+    "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nAssignment 1\n\n\n\n\n\nCovers basics of R\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "slides/01IntroToProb.html#coin-toss",
     "href": "slides/01IntroToProb.html#coin-toss",
     "title": "Introduction to Probability",
@@ -42,6 +56,27 @@
     "text": "Continuous RV\n\n\n🔗 spaul-genetics.github.io/RStat4Arts"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Basic Statistics in R for non-STEM",
+    "section": "",
+    "text": "In this course I will introduce you to R, the wonderful and powerful programming language for statistical analysis, general data analysis, machine learning and many more. We will learn enough statistical background to run simple data analysis, visualization, hypothesis testing, linear models such as multiple linear regression, and logistic regression, etc."
+  },
+  {
+    "objectID": "assignments/01Assignment1.html",
+    "href": "assignments/01Assignment1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "In this assignment you will practice the codes that we covered on first slides. We will explore more commands here.\n\nCreate a vector x containing"
+  },
+  {
+    "objectID": "schedule_bu.html",
+    "href": "schedule_bu.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
+  },
+  {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
@@ -54,27 +89,6 @@
     "title": "Schedule",
     "section": "",
     "text": "Topic\n\n\nDescription\n\n\nSub-topic\n\n\n\n\n\n\nIntroduction to Probability\n\n\nImportant basics of probability\n\n\nTheory\n\n\n\n\nIntroduction to R\n\n\nImportant basics of R\n\n\nVery Basic\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "schedule_bu.html",
-    "href": "schedule_bu.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Basic Statistics in R for non-STEM",
-    "section": "",
-    "text": "In this course I will introduce you to R, the wonderful and powerful programming language for statistical analysis, general data analysis, machine learning and many more. We will learn enough statistical background to run simple data analysis, visualization, hypothesis testing, linear models such as multiple linear regression, and logistic regression, etc."
-  },
-  {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Course Materials",
-    "section": "",
-    "text": "Datasets\nSlides"
   },
   {
     "objectID": "slides/01IntroToR.html#r",
@@ -144,7 +158,7 @@
     "href": "slides/01IntroToR.html#subset",
     "title": "Introduction to R",
     "section": "Subset",
-    "text": "Subset\n\nZila = sample(c('Munshiganj', 'Dhaka','Gazipur'), size = 10, replace = T)\nZila\n\n [1] \"Dhaka\"      \"Munshiganj\" \"Gazipur\"    \"Gazipur\"    \"Munshiganj\"\n [6] \"Munshiganj\" \"Dhaka\"      \"Dhaka\"      \"Dhaka\"      \"Dhaka\"     \n\nIncome = sample(40000:100000, size = 10, replace = T)\nIncome\n\n [1] 92530 66139 51488 54878 76072 91607 77666 79632 91087 80389\n\nZila == 'Munshiganj'\n\n [1] FALSE  TRUE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE\n\nIncome[Zila == 'Munshiganj']\n\n[1] 66139 76072 91607"
+    "text": "Subset\n\nZila = sample(c('Munshiganj', 'Dhaka','Gazipur'), size = 10, replace = T)\nZila\n\n [1] \"Munshiganj\" \"Dhaka\"      \"Munshiganj\" \"Dhaka\"      \"Munshiganj\"\n [6] \"Dhaka\"      \"Dhaka\"      \"Munshiganj\" \"Dhaka\"      \"Munshiganj\"\n\nIncome = sample(40000:100000, size = 10, replace = T)\nIncome\n\n [1] 55871 95108 89662 94102 50092 44490 63168 41182 58387 67241\n\nZila == 'Munshiganj'\n\n [1]  TRUE FALSE  TRUE FALSE  TRUE FALSE FALSE  TRUE FALSE  TRUE\n\nIncome[Zila == 'Munshiganj']\n\n[1] 55871 89662 50092 41182 67241"
   },
   {
     "objectID": "slides/01IntroToR.html#getting-help",
@@ -242,7 +256,7 @@
     "href": "slides/01IntroToR.html#add-variable",
     "title": "Introduction to R",
     "section": "Add Variable",
-    "text": "Add Variable\n\nmydata$Family.Size = sample(1:10, nrow(mydata), replace = T)\nhead(mydata)\n\n   Person       Zila Income Gender Family.Size\n1 Person1 Munshiganj  20357   Male           4\n2 Person2    Gazipur  16669 Female           7\n3 Person3 Munshiganj  11668   Male           6\n4 Person4 Munshiganj  26565   Male           7\n5 Person5 Munshiganj  23465 Female           7\n6 Person6    Gazipur  35057 Female           4"
+    "text": "Add Variable\n\nmydata$Family.Size = sample(1:10, nrow(mydata), replace = T)\nhead(mydata)\n\n   Person       Zila Income Gender Family.Size\n1 Person1 Munshiganj  20357   Male           7\n2 Person2    Gazipur  16669 Female           7\n3 Person3 Munshiganj  11668   Male           1\n4 Person4 Munshiganj  26565   Male           8\n5 Person5 Munshiganj  23465 Female           3\n6 Person6    Gazipur  35057 Female           5"
   },
   {
     "objectID": "slides/01IntroToR.html#add-variable-1",
@@ -319,6 +333,34 @@
     "href": "slides/01IntroToR.html#theme",
     "title": "Introduction to R",
     "section": "Theme",
-    "text": "Theme\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, y = Sepal.Width, color = Species)+\n  geom_point()+\n  theme_bw()+\n  labs(x = 'Sepal Length', y = 'Sepal Width')+\n  theme(legend.position = 'top', \n        axis.title = element_text(face = 'bold'))\n\n\n\n\n🔗 spaul-genetics.github.io/RStat4Arts"
+    "text": "Theme\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, y = Sepal.Width, color = Species)+\n  geom_point()+\n  theme_bw()+\n  labs(x = 'Sepal Length', y = 'Sepal Width')+\n  theme(legend.position = 'top', \n        axis.title = element_text(face = 'bold'))"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#change-color",
+    "href": "slides/01IntroToR.html#change-color",
+    "title": "Introduction to R",
+    "section": "Change color",
+    "text": "Change color\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, y = Sepal.Width, color = Species)+\n  geom_point()+\n  theme_bw()+\n  labs(x = 'Sepal Length', y = 'Sepal Width')+\n  theme(legend.position = 'top', \n        axis.title = element_text(face = 'bold'))+\n  ggthemes::scale_color_colorblind()"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#histogram",
+    "href": "slides/01IntroToR.html#histogram",
+    "title": "Introduction to R",
+    "section": "Histogram",
+    "text": "Histogram\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, fill = Species)+\n  geom_histogram(position = position_dodge())+\n  theme_bw()+\n  labs(x = 'Sepal Length', y = 'Sepal Width')+\n  theme(legend.position = 'top', \n        axis.title = element_text(face = 'bold'))+\n  ggthemes::scale_fill_colorblind()"
+  },
+  {
+    "objectID": "slides/01IntroToR.html#density",
+    "href": "slides/01IntroToR.html#density",
+    "title": "Introduction to R",
+    "section": "Density",
+    "text": "Density\n\nggplot(data = iris)+\n  aes(x = Sepal.Length, color = Species)+\n  geom_density()+\n  theme_bw()+\n  labs(x = 'Sepal Length', y = 'Sepal Width')+\n  theme(legend.position = 'top', \n        axis.title = element_text(face = 'bold'))+\n  ggthemes::scale_color_colorblind()\n\n\n\n\n🔗 spaul-genetics.github.io/RStat4Arts"
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "Datasets\nSlides"
   }
 ]

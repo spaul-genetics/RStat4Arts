@@ -578,21 +578,21 @@ Subrata Paul
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>Zila <span class="ot">=</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">'Munshiganj'</span>, <span class="st">'Dhaka'</span>,<span class="st">'Gazipur'</span>), <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span>
 <span id="cb37-2"><a href="#cb37-2"></a>Zila</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "Dhaka"      "Munshiganj" "Gazipur"    "Gazipur"    "Munshiganj"
- [6] "Munshiganj" "Dhaka"      "Dhaka"      "Dhaka"      "Dhaka"     </code></pre>
+<pre><code> [1] "Munshiganj" "Dhaka"      "Munshiganj" "Dhaka"      "Munshiganj"
+ [6] "Dhaka"      "Dhaka"      "Munshiganj" "Dhaka"      "Munshiganj"</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a>Income <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">40000</span><span class="sc">:</span><span class="dv">100000</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span>
 <span id="cb39-2"><a href="#cb39-2"></a>Income</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 92530 66139 51488 54878 76072 91607 77666 79632 91087 80389</code></pre>
+<pre><code> [1] 55871 95108 89662 94102 50092 44490 63168 41182 58387 67241</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a>Zila <span class="sc">==</span> <span class="st">'Munshiganj'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] FALSE  TRUE FALSE FALSE  TRUE  TRUE FALSE FALSE FALSE FALSE</code></pre>
+<pre><code> [1]  TRUE FALSE  TRUE FALSE  TRUE FALSE FALSE  TRUE FALSE  TRUE</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a>Income[Zila <span class="sc">==</span> <span class="st">'Munshiganj'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 66139 76072 91607</code></pre>
+<pre><code>[1] 55871 89662 50092 41182 67241</code></pre>
 </div>
 </div>
 </section>
@@ -844,12 +844,12 @@ Subrata Paul
 <span id="cb81-2"><a href="#cb81-2"></a><span class="fu">head</span>(mydata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Person       Zila Income Gender Family.Size
-1 Person1 Munshiganj  20357   Male           4
+1 Person1 Munshiganj  20357   Male           7
 2 Person2    Gazipur  16669 Female           7
-3 Person3 Munshiganj  11668   Male           6
-4 Person4 Munshiganj  26565   Male           7
-5 Person5 Munshiganj  23465 Female           7
-6 Person6    Gazipur  35057 Female           4</code></pre>
+3 Person3 Munshiganj  11668   Male           1
+4 Person4 Munshiganj  26565   Male           8
+5 Person5 Munshiganj  23465 Female           3
+6 Person6    Gazipur  35057 Female           5</code></pre>
 </div>
 </div>
 </section>
@@ -963,8 +963,50 @@ Subrata Paul
 <span id="cb93-7"><a href="#cb93-7"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">'bold'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-35-1.png" width="960" class="r-stretch"></section>
+<section id="change-color" class="slide level2 center">
+<h2>Change color</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> iris)<span class="sc">+</span></span>
+<span id="cb94-2"><a href="#cb94-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width, <span class="at">color =</span> Species)<span class="sc">+</span></span>
+<span id="cb94-3"><a href="#cb94-3"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb94-4"><a href="#cb94-4"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb94-5"><a href="#cb94-5"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">'Sepal Length'</span>, <span class="at">y =</span> <span class="st">'Sepal Width'</span>)<span class="sc">+</span></span>
+<span id="cb94-6"><a href="#cb94-6"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">'top'</span>, </span>
+<span id="cb94-7"><a href="#cb94-7"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">'bold'</span>))<span class="sc">+</span></span>
+<span id="cb94-8"><a href="#cb94-8"></a>  ggthemes<span class="sc">::</span><span class="fu">scale_color_colorblind</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-35-1.png" width="960" class="r-stretch"><div class="footer footer-default">
+</div>
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-36-1.png" width="960" class="r-stretch"></section>
+<section id="histogram" class="slide level2 center">
+<h2>Histogram</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> iris)<span class="sc">+</span></span>
+<span id="cb95-2"><a href="#cb95-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">fill =</span> Species)<span class="sc">+</span></span>
+<span id="cb95-3"><a href="#cb95-3"></a>  <span class="fu">geom_histogram</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>())<span class="sc">+</span></span>
+<span id="cb95-4"><a href="#cb95-4"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb95-5"><a href="#cb95-5"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">'Sepal Length'</span>, <span class="at">y =</span> <span class="st">'Sepal Width'</span>)<span class="sc">+</span></span>
+<span id="cb95-6"><a href="#cb95-6"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">'top'</span>, </span>
+<span id="cb95-7"><a href="#cb95-7"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">'bold'</span>))<span class="sc">+</span></span>
+<span id="cb95-8"><a href="#cb95-8"></a>  ggthemes<span class="sc">::</span><span class="fu">scale_fill_colorblind</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-37-1.png" width="960" class="r-stretch"></section>
+<section id="density" class="slide level2 center">
+<h2>Density</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> iris)<span class="sc">+</span></span>
+<span id="cb96-2"><a href="#cb96-2"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">color =</span> Species)<span class="sc">+</span></span>
+<span id="cb96-3"><a href="#cb96-3"></a>  <span class="fu">geom_density</span>()<span class="sc">+</span></span>
+<span id="cb96-4"><a href="#cb96-4"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb96-5"><a href="#cb96-5"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">'Sepal Length'</span>, <span class="at">y =</span> <span class="st">'Sepal Width'</span>)<span class="sc">+</span></span>
+<span id="cb96-6"><a href="#cb96-6"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">'top'</span>, </span>
+<span id="cb96-7"><a href="#cb96-7"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">'bold'</span>))<span class="sc">+</span></span>
+<span id="cb96-8"><a href="#cb96-8"></a>  ggthemes<span class="sc">::</span><span class="fu">scale_color_colorblind</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+
+<img data-src="01IntroToR_files/figure-revealjs/unnamed-chunk-38-1.png" width="960" class="r-stretch"><div class="footer footer-default">
 <p><a href="https://spaul-genetics.github.io/RStat4Arts">🔗 spaul-genetics.github.io/RStat4Arts</a></p>
 </div>
 </section></section>
