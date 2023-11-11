@@ -1,0 +1,20 @@
+---
+title: "Assignment 1"
+subtitle: "Covers basics of R"
+author: "Subrata Paul"
+
+format: 
+  html:
+    toc: true
+    html-math-method: katex
+    embed-resources: true
+    smooth-scroll: true
+    theme: 
+      light: sandstone
+      dark: darkly
+---
+
+In this assignment you will practice the codes that we covered on first slides. We will explore more commands here. 
+
+1. Create a vector $x$ containing 
+

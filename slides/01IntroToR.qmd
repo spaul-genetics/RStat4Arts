@@ -344,3 +344,44 @@ ggplot(data = iris)+
   theme(legend.position = 'top', 
         axis.title = element_text(face = 'bold'))
 ```
+
+## Change color
+
+```{r}
+ggplot(data = iris)+
+  aes(x = Sepal.Length, y = Sepal.Width, color = Species)+
+  geom_point()+
+  theme_bw()+
+  labs(x = 'Sepal Length', y = 'Sepal Width')+
+  theme(legend.position = 'top', 
+        axis.title = element_text(face = 'bold'))+
+  ggthemes::scale_color_colorblind()
+```
+
+## Histogram
+
+```{r}
+ggplot(data = iris)+
+  aes(x = Sepal.Length, fill = Species)+
+  geom_histogram(position = position_dodge())+
+  theme_bw()+
+  labs(x = 'Sepal Length', y = 'Sepal Width')+
+  theme(legend.position = 'top', 
+        axis.title = element_text(face = 'bold'))+
+  ggthemes::scale_fill_colorblind()
+```
+
+## Density
+
+```{r}
+ggplot(data = iris)+
+  aes(x = Sepal.Length, color = Species)+
+  geom_density()+
+  theme_bw()+
+  labs(x = 'Sepal Length', y = 'Sepal Width')+
+  theme(legend.position = 'top', 
+        axis.title = element_text(face = 'bold'))+
+  ggthemes::scale_color_colorblind()
+```
+
+

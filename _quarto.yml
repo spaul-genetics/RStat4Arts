@@ -19,6 +19,8 @@ website:
         text: Home
       - href: schedule.qmd
         text: Schedule
+      - href: assignments.qmd
+        text: Assignments
       - href: https://github.com/spaul-genetics/quarto-course-website-template/discussions
         text: Forum
 

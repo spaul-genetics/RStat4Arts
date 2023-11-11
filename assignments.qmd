@@ -1,9 +1,9 @@
 ---
-title: "Schedule"
+title: "Assignments"
 listing:
-  - id: schedule
+  - id: assignments
     contents:
-      - slides/*.qmd
+      - assignments/*.qmd
     type: table
     fields: [title, description, subtitle]
     field-display-names:
@@ -18,7 +18,7 @@ listing:
 editor: visual
 ---
 
-## Weekly schedule
+## Assignments
 
-::: {#schedule}
+::: {#assignments}
 :::
